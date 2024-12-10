@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --bg-color: #fff;
+  --soft-Blue: hsl(231, 69%, 60%);
+  --soft-Red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-bark-blue: hsl(229, 31%, 21%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-color);
+  font-family: 'Rubik', serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 40px;
+}
+
+.navbar a {
+  color: var(--very-bark-blue);
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--soft-Red);
+}
+
+.navbar .login-btn {
+  background-color: var(--soft-Red);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 8px 30px;
+}
+
+.navbar .login-btn:hover {
+  background-color: #fff;
+  color: var(--soft-Red);
+  border-color: var(--soft-Red);
+}
+
+.hamburger-menu {
+  display: none;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Hero Styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-section .hero-title {
+  color: var(--very-bark-blue);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.hero-section .hero-text {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  padding: 14px 25px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: var(--soft-Blue);
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: var(--soft-Blue);
+  border-color: var(--soft-Blue);
+}
+
+.gray {
+  margin-left: 10px;
+  background-color: var(--grayish-blue);
+}
+.gray:hover {
+  border-color: var(--grayish-blue);
+  color: var(--grayish-blue);
+}
+
+.hero-section img {
+  width: 500px;
+}
