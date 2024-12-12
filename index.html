@@ -51,19 +51,19 @@
       </section>
 
       <section class="features">
-        <h3>Features</h3>
+        <h3 class="heading">Features</h3>
         <p>
           Our aim is to make it quick and easy for you to access your
           <br />favourite websites. Your bookmarks sync between your devices
           <br />so you can access them on the go.
         </p>
         <div class="features-tabs">
-          <a href="#" class="active">Simple Bookmarking</a>
-          <a href="#">Speedy Searching</a>
-          <a href="#">Easy Sharing</a>
+          <a href="#" class="active" data-tab="1">Simple Bookmarking</a>
+          <a href="#" data-tab="2">Speedy Searching</a>
+          <a href="#" data-tab="3">Easy Sharing</a>
         </div>
         <div class="features-tab-content">
-          <div class="tab tab1">
+          <div class="tab tab1 active">
             <img
               src="./images/illustration-features-tab-1.svg"
               alt=""
@@ -72,15 +72,165 @@
             <div class="tab-text">
               <h3>Bookmark in one click</h3>
               <p>
-                Organize your bookmarks however you like. Our<br />
-                simple drag-and-drop interface gives you complete <br />control
-                over how you manage your favourite sites.
+                Organize your bookmarks however you like. Our <br />simple
+                drag-and-drop interface gives you complete <br />control over
+                how you manage your favourite sites.
               </p>
-              <a href="#" class="btn tab-btn"> More Info</a>
+              <a href="#" class="tab-btn">More Info</a>
+            </div>
+          </div>
+          <div class="tab tab2">
+            <img
+              src="./images/illustration-features-tab-2.svg"
+              alt=""
+              class="tab-img"
+            />
+            <div class="tab-text">
+              <h3>Intelligent Search</h3>
+              <p>
+                Our powerful search feature will help you find saved <br />sites
+                in no time at all. No need to trawl through all of <br />your
+                bookmarks.
+              </p>
+              <a href="#" class="tab-btn">More Info</a>
+            </div>
+          </div>
+          <div class="tab tab3">
+            <img
+              src="./images/illustration-features-tab-3.svg"
+              alt=""
+              class="tab-img"
+            />
+            <div class="tab-text">
+              <h3>Share your bookmarks</h3>
+              <p>
+                Easily share your bookmarks and collections with<br />others.
+                Create a shareable link that you can send at <br />
+                the click of a button.
+              </p>
+              <a href="#" class="tab-btn">More Info</a>
             </div>
           </div>
         </div>
       </section>
+      <section class="extension">
+        <h3>Download the extension</h3>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          <br />you’ve got a favourite you’d like us to prioritize.
+        </p>
+        <div class="extension-broswer">
+          <div class="box box-1">
+            <img
+              class="browser-logo"
+              src="./images/logo-chrome.svg"
+              alt="chrome logo"
+            />
+            <h4>Add to Chrome</h4>
+            <p>Minimum version 62</p>
+            <img class="dots" src="./images/bg-dots.svg" alt="" />
+            <a href="#" class="extension-btn">Add & Install Extension</a>
+          </div>
+          <div class="box box-2">
+            <img
+              class="browser-logo"
+              src="./images/logo-firefox.svg"
+              alt="firefox logo"
+            />
+            <h4>Add to Firefox</h4>
+            <p>Minimum version 55</p>
+            <img class="dots" src="./images/bg-dots.svg" alt="" />
+            <a href="#" class="extension-btn">Add & Install Extension</a>
+          </div>
+          <div class="box box-3">
+            <img
+              class="browser-logo"
+              src="./images/logo-opera.svg"
+              alt="opera logo"
+            />
+            <h4>Add to Chrome</h4>
+            <p>Minimum version 46</p>
+            <img class="dots" src="./images/bg-dots.svg" alt="" />
+            <a href="#" class="extension-btn">Add & Install Extension</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          Here are some of our FAQs. If you have any other questions <br />
+          you’d like answered please feel free to email us.
+        </p>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Bookmark?</span>
+            <span class="icon">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </span>
+          </div>
+          <p class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How can I request a new browser?</span>
+            <span class="icon">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </span>
+          </div>
+          <p class="faq-answer">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a mobile app?</span>
+            <span class="icon">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </span>
+          </div>
+          <p class="faq-answer">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What about other Chromium browsers?</span>
+            <span class="icon">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </span>
+          </div>
+          <p class="faq-answer">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit.
+          </p>
+        </div>
+        <a href="#" class="faq-btn">More Info</a>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
