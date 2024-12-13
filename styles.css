@@ -2,8 +2,8 @@
 
 :root {
   --bg-color: #fff;
-  --soft-Blue: hsl(231, 69%, 60%);
-  --soft-Red: hsl(0, 94%, 66%);
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-bark-blue: hsl(229, 31%, 21%);
 }
@@ -72,11 +72,11 @@ ul {
 }
 
 .navbar a:hover {
-  color: var(--soft-Red);
+  color: var(--soft-red);
 }
 
 .navbar .login-btn {
-  background-color: var(--soft-Red);
+  background-color: var(--soft-red);
   color: #fff;
   border: 2px solid transparent;
   border-radius: 3px;
@@ -85,14 +85,13 @@ ul {
 
 .navbar .login-btn:hover {
   background-color: #fff;
-  color: var(--soft-Red);
-  border-color: var(--soft-Red);
+  color: var(--soft-red);
+  border-color: var(--soft-red);
 }
 
-.hamburger-menu {
+.menu-open,
+.menu-close {
   display: none;
-  width: 20px;
-  height: auto;
   cursor: pointer;
 }
 
@@ -117,7 +116,7 @@ ul {
   padding: 14px 25px;
   border: 2px solid transparent;
   border-radius: 3px;
-  background-color: var(--soft-Blue);
+  background-color: var(--soft-blue);
   color: #fff;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -125,8 +124,8 @@ ul {
 
 .cta-btn:hover {
   background-color: #fff;
-  color: var(--soft-Blue);
-  border-color: var(--soft-Blue);
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
 }
 
 .gray {
@@ -175,7 +174,7 @@ ul {
 }
 
 .features-tabs a:hover {
-  color: var(--soft-Red);
+  color: var(--soft-red);
 }
 
 .features-tabs a.active {
@@ -189,7 +188,7 @@ ul {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: var(--soft-Red);
+  background-color: var(--soft-red);
 }
 
 .tab {
@@ -224,7 +223,7 @@ ul {
 
 .tab-btn {
   display: inline-block;
-  background: var(--soft-Blue);
+  background: var(--soft-blue);
   color: #fff;
   padding: 10px 15px;
   border-radius: 3px;
@@ -235,8 +234,8 @@ ul {
 
 .tab-btn:hover {
   background-color: #fff;
-  color: var(--soft-Blue);
-  border-color: var(--soft-Blue);
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
 }
 
 /* extension styles */
@@ -278,6 +277,7 @@ ul {
 .extension-broswer .box-2 {
   margin-top: 3em;
 }
+
 .extension-broswer .box-3 {
   margin-top: 6em;
 }
@@ -302,15 +302,15 @@ ul {
   padding: 9px 25px;
   border: 2px solid transparent;
   border-radius: 3px;
-  background-color: var(--soft-Blue);
+  background-color: var(--soft-blue);
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .extension-btn:hover {
   background-color: #fff;
-  color: var(--soft-Blue);
-  border-color: var(--soft-Blue);
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
   font-weight: 500;
 }
 
@@ -351,7 +351,7 @@ ul {
 }
 
 .faq-question:hover > span {
-  color: var(--soft-Red);
+  color: var(--soft-red);
   transition: all 0.3s ease;
 }
 
@@ -390,7 +390,7 @@ ul {
 .faq-btn {
   display: block;
   width: 110px;
-  background: var(--soft-Blue);
+  background: var(--soft-blue);
   color: #fff;
   margin: 2em auto 0;
   padding: 10px 15px;
@@ -403,6 +403,471 @@ ul {
 
 .faq-btn:hover {
   background-color: #fff;
-  color: var(--soft-Blue);
-  border-color: var(--soft-Blue);
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
+}
+
+/* footer styles */
+.email-subscription {
+  background-color: var(--soft-blue);
+  margin-top: 4em;
+}
+
+.email-subscription .email-container {
+  padding: 4em 0;
+  height: fit-content;
+  width: 400px;
+  margin: auto;
+  color: #fff;
+}
+
+.social-links {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  padding: 0 5px;
+}
+
+.social-links img:hover {
+  background-color: var(--soft-red);
+}
+
+.email-subscription small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.email-subscription h3 {
+  color: #fff;
+  text-align: center;
+  margin: 1em 0 1.5em;
+  font-weight: 450;
+  letter-spacing: 2px;
+}
+
+.email-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-container input[type='email'] {
+  width: 100%;
+  padding: 0.8em;
+  font-family: 'Rubik', sans-serif;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.email-container input[type='email'].error {
+  border-color: var(--soft-red);
+  border-radius: 4px 4px 0 0;
+}
+
+form img {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.email-container img.error {
+  display: block;
+}
+
+.email-container .tooltip {
+  display: none;
+  position: absolute;
+  background: var(--soft-red);
+  font-size: 12px;
+  padding: 0.5em;
+  border-radius: 0 0 4px 4px;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.email-container .tooltip.active {
+  display: block;
+}
+
+.email-container input[type='submit'] {
+  background: var(--soft-red);
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  padding: 0.8em;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.email-container input[type='submit']:hover {
+  border-color: var(--soft-red);
+  background-color: #fff;
+  color: var(--soft-red);
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .hero-section br,
+  .features-tab-content br {
+    display: none;
+  }
+
+  .hero-section {
+    margin-bottom: 3em;
+  }
+
+  .hero-section .hero-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .cta-btn {
+    padding: 10px;
+  }
+  .hero-section img {
+    width: 330px;
+  }
+
+  .tab {
+    margin-top: -20px;
+  }
+
+  .features-tabs a {
+    padding: 15px 25px 18px;
+  }
+  .tab img {
+    width: 300px;
+    margin-left: 40px;
+  }
+
+  .tab-text {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero-section .hero-title br {
+    display: block;
+  }
+
+  .navbar {
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: hsla(229, 31%, 21%, 0.897);
+    width: 100%;
+    height: 0vh;
+    padding: 0 100px;
+    text-align: center;
+    transition: height 0.5s ease;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar ul li {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+
+  .navbar ul li:last-child {
+    margin-top: 10px;
+    border-bottom: none;
+  }
+
+  .navbar a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 4px;
+    transition: color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: var(--soft-red);
+  }
+
+  .navbar .login-btn {
+    width: 100%;
+    background: none;
+    border: 2px solid var(--grayish-blue);
+    border-radius: 3px;
+    padding: 8px 100px;
+    font-weight: 500;
+  }
+
+  .navbar .login-btn:hover {
+    background: none;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .navbar.active {
+    height: 45vh;
+  }
+
+  .menu-close.active {
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    display: block;
+  }
+
+  .menu-open {
+    display: block;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .hero-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-text {
+    text-align: center;
+    margin: 15px 0 40px;
+  }
+
+  .cta-btn {
+    text-align: center;
+    margin-left: 55px;
+    width: 50%;
+    padding: 14px;
+  }
+
+  .cta-btn:hover {
+    background-color: var(--soft-blue);
+    color: #fff;
+  }
+  .gray {
+    margin-left: 10px;
+    background-color: var(--grayish-blue);
+  }
+  .gray:hover {
+    background-color: var(--grayish-blue);
+    color: #fff;
+  }
+
+  .hero-section img {
+    width: 350px;
+  }
+
+  .features {
+    margin-top: 4em;
+  }
+
+  .features br {
+    display: none;
+  }
+  .features > p {
+    margin-bottom: 35px;
+  }
+
+  .features-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  .features-tabs a {
+    padding: 20px 0;
+  }
+  .features-tabs a:first-child {
+    border-top: 1px solid #ebebeb;
+  }
+
+  .features-tabs a.active::after {
+    left: 35%;
+    right: 35%;
+  }
+
+  .tab {
+    margin-top: 2em;
+    flex-direction: column;
+  }
+
+  .tab img {
+    width: 300px;
+  }
+
+  .tab-text {
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .tab-text br,
+  .extension br {
+    display: none;
+  }
+
+  .tab-btn:hover {
+    background: var(--soft-blue);
+    color: #fff;
+  }
+
+  .extension {
+    margin-top: 3em;
+    gap: 20px;
+  }
+
+  .extension h3 {
+    margin-bottom: 8px;
+  }
+
+  .extension-broswer {
+    margin-top: 2em;
+    flex-direction: column;
+  }
+
+  .extension-broswer .box {
+    width: 220px;
+    padding: 30px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  .extension-broswer .box-2,
+  .extension-broswer .box-3 {
+    margin-top: 0em;
+  }
+
+  .extension-btn {
+    padding: 8px 20px;
+    border: none;
+    font-size: 14px;
+  }
+
+  .extension-btn:hover {
+    background-color: var(--soft-blue);
+    color: #fff;
+    font-weight: 400;
+  }
+  .faq-section br {
+    display: none;
+  }
+
+  .faq-section {
+    max-width: 400px;
+    margin-top: 3em;
+  }
+
+  .faq-question:hover > span {
+    color: var(--very-bark-blue);
+    transition: none;
+  }
+
+  .faq-btn {
+    transition: none;
+    border: none;
+  }
+
+  .faq-btn:hover {
+    background-color: var(--soft-blue);
+    color: #fff;
+  }
+
+  .social-links img:hover {
+    background: none;
+  }
+
+  .email-container form {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .email-container input[type='submit'] {
+    width: 100%;
+    margin-top: 2em;
+    border: none;
+    transition: none;
+  }
+
+  .email-container input[type='submit']:hover {
+    background: var(--soft-red);
+    color: #fff;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-btn {
+    margin-left: 20px;
+    width: 25%;
+    padding: 10px;
+    transition: none;
+  }
+
+  .gray {
+    margin-left: 6px;
+  }
+
+  .hero-section img {
+    width: 300px;
+  }
+
+  .tab img {
+    width: 250px;
+    margin-right: 25px;
+  }
+
+  .extension-btn {
+    transition: none;
+  }
+
+  .faq-section {
+    max-width: 320px;
+  }
+
+  .faq-question > span {
+    font-size: 14px;
+  }
+
+  .faq-question img {
+    width: 11px;
+  }
+
+  .email-subscription small,
+  .email-subscription h3 {
+    margin-right: 40px;
+  }
+
+  .email-container form {
+    padding-right: 40px;
+  }
 }

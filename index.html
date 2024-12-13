@@ -28,7 +28,12 @@
         <img
           src="./images/icon-hamburger.svg"
           alt="Hamburger menu"
-          class="hamburger-menu"
+          class="menu-open"
+        />
+        <img
+          src="./images/icon-close.svg"
+          alt="Hamburger menu"
+          class="menu-close"
         />
       </header>
 
@@ -175,7 +180,6 @@
             quis quam ornare mattis.
           </p>
         </div>
-
         <div class="faq-item">
           <div class="faq-question">
             <span>How can I request a new browser?</span>
@@ -192,7 +196,6 @@
             imperdiet.
           </p>
         </div>
-
         <div class="faq-item">
           <div class="faq-question">
             <span>Is there a mobile app?</span>
@@ -222,15 +225,42 @@
         </div>
         <a href="#" class="faq-btn">More Info</a>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
+
+    <footer class="email-subscription">
+      <div class="email-container">
+        <div class="social-links">
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="facebook"
+          /></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="facebook" /></a>
+        </div>
+        <small>35,000+ already joined</small>
+        <h3>
+          Stay up-to-date with what <br />
+          we’re doing
+        </h3>
+        <form action="#" id="email-form">
+          <div style="position: relative; flex: 1">
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email address"
+              required
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="icon-error"
+              id="error-icon"
+            />
+            <div class="tooltip" id="tooltip">
+              Whoops, make sure it’s an email
+            </div>
+          </div>
+          <input type="submit" value="Contact Us" class="submit-btn" />
+        </form>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

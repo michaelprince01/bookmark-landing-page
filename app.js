@@ -51,3 +51,42 @@ document.querySelectorAll('.faq-question').forEach((question) => {
     iconImg.classList.toggle('active');
   });
 });
+
+// Code for the email-subscription section
+document
+  .getElementById('email-form')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('email-input');
+    const errorIcon = document.getElementById('error-icon');
+    const tooltip = document.getElementById('tooltip');
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailInput.value)) {
+      emailInput.classList.add('error');
+      errorIcon.classList.add('error');
+      tooltip.classList.add('active');
+    } else {
+      emailInput.classList.remove('error');
+      errorIcon.classList.remove('error');
+      tooltip.classList.remove('active');
+      alert('Thank you for subscribing!');
+      emailInput.value = '';
+    }
+  });
+
+// responsiveness code
+const menuOpen = document.querySelector('.menu-open');
+const menuClose = document.querySelector('.menu-close');
+const menu = document.querySelector('.navbar');
+
+menuOpen.addEventListener('click', () => {
+  menu.classList.add('active');
+  menuClose.classList.add('active');
+});
+
+menuClose.addEventListener('click', () => {
+  menu.classList.remove('active');
+});
